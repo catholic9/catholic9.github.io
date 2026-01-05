@@ -13,24 +13,26 @@ icon: fas fa-dragon
 
 <section class="gallery-wrapper">
   <div class="gallery-grid">
-    <img src="{{ '/assets/img/gallery/IMG_4665.PNG' | relative_url }}"
+    <img src="../assets/img/gallery/IMG_4665.PNG"
          alt="단휘 갤러리 이미지 1"
-         class="reveal lightbox-trigger">
+         class="reveal-lightbox">
 
-    <img src="{{ '/assets/img/gallery/IMG_4666.PNG' | relative_url }}"
+    <img src="../assets/img/gallery/IMG_4666.PNG"
          alt="단휘 갤러리 이미지 2"
-         class="reveal lightbox-trigger">
+         class="reveal-lightbox">
 
-    <img src="{{ '/assets/img/gallery/IMG_4954.JPG' | relative_url }}"
+    <img src="../assets/img/gallery/IMG_4954.JPG"
          alt="단휘 갤러리 이미지 3"
-         class="reveal lightbox-trigger">
+         class="reveal-lightbox">
 
-    <img src="{{ '/assets/img/gallery/IMG_4988.JPG' | relative_url }}"
+    <img src="../assets/img/gallery/IMG_4988.JPG"
          alt="단휘 갤러리 이미지 4"
-         class="reveal lightbox-trigger">
+         class="reveal-lightbox">
   </div>
 </section>
 
 <div id="lightbox">
   <img id="lightbox-img" alt="확대 이미지">
+</div>
+이미지">
 </div>
