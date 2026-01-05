@@ -28,8 +28,10 @@ url: "catholic9.github.io"
 github:
   username: catholic9 # change to your GitHub username
 
+
 twitter:
   username: @cat_holic9 # change to your Twitter username
+  card: summary
 
 social:
   # Change to your full name.
