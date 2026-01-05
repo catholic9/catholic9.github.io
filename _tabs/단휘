@@ -1,5 +1,25 @@
 ---
-layout: categories
-icon: fas fa-stream
-order: 4
+title: 단휘
+order: 3
+icon: fas fa-dragon
 ---
+
+<section class="dan-hui-intro">
+  <div class="dan-hui-overlay">
+    <h1 class="neon-title">單輝</h1>
+    <p class="neon-sub">Neon Archive of Images</p>
+  </div>
+</section>
+
+<section class="gallery-wrapper">
+  <div class="gallery-grid">
+    <img src="/assets/img/gallery/01.jpg" class="reveal" onclick="openLightbox(this)">
+    <img src="/assets/img/gallery/02.jpg" class="reveal" onclick="openLightbox(this)">
+    <img src="/assets/img/gallery/03.jpg" class="reveal" onclick="openLightbox(this)">
+    <img src="/assets/img/gallery/04.jpg" class="reveal" onclick="openLightbox(this)">
+  </div>
+</section>
+
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img">
+</div>
