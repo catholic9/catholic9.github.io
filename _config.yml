@@ -226,3 +226,9 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+custom_css:
+  - /assets/css/custom.css
+
+custom_js:
+  - /assets/js/custom.js
