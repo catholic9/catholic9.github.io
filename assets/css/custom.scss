@@ -1,0 +1,97 @@
+/* =====================
+   단휘 인트로
+===================== */
+.dan-hui-intro {
+  height: 80vh;
+  background: url("/assets/img/intro/neon-bg.jpg") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dan-hui-overlay {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 3rem 4rem;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* 네온 텍스트 */
+.neon-title {
+  font-size: 4rem;
+  color: #ff2d55;
+  text-shadow:
+    0 0 5px #ff2d55,
+    0 0 15px #ff2d55,
+    0 0 30px #ff005d;
+  animation: flicker 2.5s infinite alternate;
+}
+
+.neon-sub {
+  color: #f2c2d1;
+  margin-top: 1rem;
+  letter-spacing: 0.2em;
+}
+
+/* 깜빡이는 네온 */
+@keyframes flicker {
+  0% { opacity: 1; }
+  100% { opacity: 0.85; }
+}
+
+/* =====================
+   갤러리
+===================== */
+.gallery-wrapper {
+  padding: 4rem 1rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 14px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.4s ease;
+}
+
+/* 스크롤 등장 */
+.gallery-grid img.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 네온 hover */
+.gallery-grid img:hover {
+  box-shadow:
+    0 0 10px #ff2d55,
+    0 0 25px #ff005d;
+  transform: scale(1.05);
+}
+
+/* =====================
+   라이트박스
+===================== */
+#lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 18px;
+  box-shadow: 0 0 40px #ff2d55;
+}
